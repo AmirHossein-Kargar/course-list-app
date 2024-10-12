@@ -1,0 +1,8 @@
+:root {
+    background-color: #f4f4f5;
+    max-width: 1280px;
+    margin: 0 auto
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
