@@ -17,7 +17,7 @@ const courses = [
       "lesson on planning design concept and proper planning of work",
     imageUrl: "/images/img2.jpg",
     rate: "4",
-    tags: ["UI/UX design", "web design"],
+    tags: ["UI/UX design ", "web design"],
     start: "2023-07-01T20:46:30.615Z",
     status: "Upcoming",
   },
@@ -28,8 +28,8 @@ const courses = [
       "lectures on how to build your buisness safely without fare of new projects",
     imageUrl: "/images/img3.jpg",
     rate: "3.9",
-    tags: ["Marketing", "Finance"],
-    start: "2023-07-01T20:46:30.615Z",
+    tags: ["Marketing ", "Finance"],
+    start: "2024-04-01T20:46:30.615Z",
     status: "Active",
   },
 ];
@@ -37,7 +37,7 @@ const courses = [
 function CourseList() {
   return (
     <div className="course-list rounded-2xl mt-8">
-    {courses.map((course) => <CourseCard key={course.id}/>)}
+    {courses.map((course) => <CourseCard key={course.id} course={course} />)}
     </div>
   );
 }
