@@ -1,12 +1,15 @@
 import CourseList from "./Components/CourseList";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 
 
 function App() {
   return (
     <div className="container">
-      <h1 className="text-3xl text-center font-bold mt-4 tracking-wide">My Courses (3)</h1>
+      <Header />
       <CourseList />
+      <Footer />
     </div>
   );
 }
