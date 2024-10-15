@@ -4,7 +4,7 @@ function CourseCard({ course }) {
       <div className="flex items-center">
         <div className="course-item__img">
           <img
-            src={course.imageUrl}
+            src={course.image}
             alt={course.title}
             className="w-52 h-auto rounded-3xl overflow-hidden"
           />

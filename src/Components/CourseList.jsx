@@ -1,12 +1,15 @@
 import CourseCard from "./CourseCard";
+import EnglishLecturePic from "../assets/images/img1.jpg"
+import DesignStrategy from "../assets/images/img2.jpg"
+import BusinessLecture from "../assets/images/img3.jpg"
 const courses = [
   {
     id: 1,
     title: "English Lecture",
     description: "language lessons with the most popular teachers",
-    imageUrl: "/images/img1.jpg",
+    image: EnglishLecturePic,
     rate: "4.5",
-    tags: ["langauges"],
+    tags: ["languages"],
     start: "2021-08-01T20:46:30.615Z",
     status: "Completed",
   },
@@ -15,7 +18,7 @@ const courses = [
     title: "Design Strategy",
     description:
       "lesson on planning design concept and proper planning of work",
-    imageUrl: "/images/img2.jpg",
+    image: DesignStrategy,
     rate: "4",
     tags: ["UI/UX design ", "web design"],
     start: "2023-07-01T20:46:30.615Z",
@@ -25,8 +28,8 @@ const courses = [
     id: 3,
     title: "Business Lecture",
     description:
-      "lectures on how to build your buisness safely without fare of new projects",
-    imageUrl: "/images/img3.jpg",
+      "lectures on how to build your business safely without fare of new projects",
+    image: BusinessLecture,
     rate: "3.9",
     tags: ["Marketing ", "Finance"],
     start: "2024-04-01T20:46:30.615Z",
@@ -37,7 +40,9 @@ const courses = [
 function CourseList() {
   return (
     <div className="course-list rounded-2xl mt-8">
-    {courses.map((course) => <CourseCard key={course.id} course={course} />)}
+      {courses.map((course) => (
+        <CourseCard key={course.id} course={course} />
+      ))}
     </div>
   );
 }
