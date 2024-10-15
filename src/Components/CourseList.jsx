@@ -7,7 +7,7 @@ const courses = [
     id: 1,
     title: "English Lecture",
     description: "language lessons with the most popular teachers",
-    image: EnglishLecturePic,
+    imageUrl: EnglishLecturePic,
     rate: "4.5",
     tags: ["languages"],
     start: "2021-08-01T20:46:30.615Z",
@@ -18,7 +18,7 @@ const courses = [
     title: "Design Strategy",
     description:
       "lesson on planning design concept and proper planning of work",
-    image: DesignStrategy,
+    imageUrl: DesignStrategy,
     rate: "4",
     tags: ["UI/UX design ", "web design"],
     start: "2023-07-01T20:46:30.615Z",
@@ -28,8 +28,8 @@ const courses = [
     id: 3,
     title: "Business Lecture",
     description:
-      "lectures on how to build your business safely without fare of new projects",
-    image: BusinessLecture,
+      "lectures on how to build your buisness safely without fare of new projects",
+    imageUrl: BusinessLecture,
     rate: "3.9",
     tags: ["Marketing ", "Finance"],
     start: "2024-04-01T20:46:30.615Z",
