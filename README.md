@@ -1,8 +1,21 @@
-# React + Vite
+In my first React.js project, I utilized separate components and props to effectively display data on a dynamic page.
+## 🧑🏼‍💻 Tech Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Client:** Tailwind css, React js
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Deployment
+
+**To see deploy this project click here. 👇**
+
+[https://amirhossein-kargar.github.io/course-list-app/](https://amirhossein-kargar.github.io/course-list-app//)
+
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amirkargar/)
+
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/Njx0BQDn/amirhossein-kargar-github-io-course-list-app.png)
+
