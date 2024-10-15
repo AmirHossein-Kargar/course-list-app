@@ -1,7 +1,7 @@
 function CourseCard({ course }) {
   return (
     <div className="course-item p-5 rounded-3xl bg-zinc-50 mb-8 tracking-wider">
-      <div className="flex items-center">
+      <div className="flex flex-col sm:flex-row items-center">
         <div className="course-item__img">
           <img
             src={course.imageUrl}
@@ -26,12 +26,15 @@ export default CourseCard;
 
 function CourseCardBody({ title, description, rate }) {
   return (
-    <div className="course-item__body flex justify-between items-center gap-3 flex-1">
-      <div>
+    <div className="course-item__body flex justify-between items-center gap-3 flex-1 flex-col sm:flex-row">
+      <div className="text-center sm:text-start mt-4 sm:mt-0">
         <h2 className="text-2xl font-extrabold">{title}</h2>
         <p className="text-base text-dark my-4">{description}</p>
       </div>
-      <div className="rate font-medium">{rate} ⭐</div>
+      <div className="rate font-medium flex justify-center items-center">
+        <span className="mr-2">{rate}</span>
+        <span>⭐</span>
+      </div>
     </div>
   );
 }
@@ -45,7 +48,7 @@ function CourseCardFooter({ course }) {
 
   return (
     <div className="course-item__footer">
-      <div className="tags flex gap-4 mb-4 flex-col w-max md:flex-row">
+      <div className="tags flex my-4 flex-col sm:flex-row items-center gap-4 sm:items-end sm:justify-start">
         {course.tags.map((tag) => (
           <span
             key={tag}
@@ -55,7 +58,7 @@ function CourseCardFooter({ course }) {
           </span>
         ))}
       </div>
-      <div className="caption flex items-center justify-between">
+      <div className="caption flex justify-center items-center flex-col gap-4 sm:flex-row sm:justify-between">
         <div className="date text-dark text-sm">
           {startedAt}
         </div>
